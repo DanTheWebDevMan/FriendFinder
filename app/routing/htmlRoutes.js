@@ -1,12 +1,19 @@
-var path = require("path");
+// Node Dependencies
+var path = require('path');
 
-module.exports = function(app) {
-	// if user enters survey in URL or presses survey button, serves the survey HTML file
-	app.get("/survey", function(req, res) {
-		res.sendFile(path.join(__dirname, "/../public/survey.html"));
-	});
+// Includes Two Routes
+function htmlRoutes(app) {
+// A GET Route to /survey which should display the survey page.
+  app.get('/survey', function (req, res) {
+    res.sendFile(path.join(__dirname + '/../public/survey.html'));
+  });
 
-	// fallback use route for homepage
-	app.use(function(req, res) {
-        res.sendFile(path.join(__dirname, "/../public/home.html"));
-    )}; 
+// A default USE route that leads to home.html which displays the home page.
+  app.use(function (req, res) {
+    res.sendFile(path.join(__dirname + '/../public/home.html'));
+  });
+
+}
+
+// Export for use in main server.js file
+module.exports = htmlRoutes;
