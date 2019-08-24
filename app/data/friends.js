@@ -54,16 +54,16 @@ var friends = [
     "name":"Terra",
     "photo": "http://www.inspiremykids.com/wp-content/uploads/2011/04/smiling-planet-earth-cartoon-2-thum.jpg",
     "scores":[
-        5,
-        4,
-        4,
-        1,
-        4,
-        1,
-        5,
-        1,
         3,
-        3
+        3,
+        4,
+        5,
+        4,
+        1,
+        5,
+        2,
+        3,
+        1
     ]
     },
 
