@@ -3,8 +3,8 @@ var express = require('express');
 var path = require('path');
 
 // Link in html and api routes
-var apiRoutes = require('app/routing/apiRoutes.js');
-var htmlRoutes = require('app/routing/htmlRoutes.js');
+var apiRoutes = require('./app/routing/apiRoutes');
+var htmlRoutes = require('./app/routing/htmlRoutes.js');
 
 // Set up Express App
 var app = express();
